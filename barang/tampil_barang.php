@@ -48,4 +48,6 @@ $dataTable = getTableData($table, $page, $dataPerPage);
 </tr>
 </body>
 </table>
-<?php showPagination($table, $dataPerPage);  ?>
+<div align="center" style="margin-top:10px; color: #2196f3;">
+	<?php showPagination($table, $dataPerPage);  ?>
+</div>
