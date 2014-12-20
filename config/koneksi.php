@@ -1,8 +1,8 @@
 <?php
 $server   = "localhost";
 $username = "root";
-$password = "password";
-$database = "ferani_baby_shop";
+$password = "";
+$database = "toko-devi";
 
 // Koneksi dan memilih database di server
 mysql_connect($server,$username,$password) or die("Koneksi gagal ".mysql_error());
