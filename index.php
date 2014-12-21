@@ -16,15 +16,17 @@ session_start();
 		<div id="header">
 			<p>TOKO DEVI</p>
 		</div>
-		<nav class="nav-menu">
-			<ul>
-				<li><a href="index.php?modul=home">home</a></li>
-				<li><a href="index.php?modul=produk">produk</a></li>
-				<li><a href="index.php?modul=ttg_kami">tentang</a></li>
-				<li><a href="index.php?modul=kontak">Kontak</a></li>
-				<li><a href="index.php?modul=konfirmasi">Konfirmasi Pembayaran</a></li>
-			</ul>
-		</nav>
+		<?php if (empty($_SESSION['username'])): ?>
+			<nav class="nav-menu">
+				<ul>
+					<li><a href="index.php?modul=home">home</a></li>
+					<li><a href="index.php?modul=produk">produk</a></li>
+					<li><a href="index.php?modul=ttg_kami">tentang</a></li>
+					<li><a href="index.php?modul=kontak">Kontak</a></li>
+					<li><a href="index.php?modul=konfirmasi">Konfirmasi Pembayaran</a></li>
+				</ul>
+			</nav>
+		<?php endif ?>
 		<div id="left-side">
 			<?php  
 				if (empty($_SESSION['username'])) {

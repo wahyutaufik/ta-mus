@@ -11,8 +11,7 @@ while ($pes = mysql_fetch_assoc($pesanan)) {
 <style type="text/css">
 	body{background-color: #FFF;}
 	#header{display: none;}
-	#side-left{display: none;}
-	#side-right{display: none;}
+	#left-side{display: none;}
 	#footer{display: none;}
 	#wrapper #content{width: 96%;}
 	.nav-menu{display: none;}
